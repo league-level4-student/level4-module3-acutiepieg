@@ -34,7 +34,7 @@ class ExceptionsTest {
 	public void testDivideByZeroException() {
 		try {
 			System.out.println(ExceptionMethods.divide(2.2, 1.0));
-			assertEquals(ExceptionMethods.divide(3.0, 0.0), 1);
+			assertEquals(ExceptionMethods.divide(3.0, 0.0), 1.0);
 			System.out.println(ExceptionMethods.divide(5.6, 3.8));
 		}catch(IllegalArgumentException e){
 			System.out.println("The denominator is 0.0");
